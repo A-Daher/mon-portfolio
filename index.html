@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Style Yuji</title>
+<title>Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<!-- Icônes FontAwesome -->
-<script src="https://kit.fontawesome.com/your-key.js" crossorigin="anonymous"></script>
+
+<!-- ✅ Ajout de Font Awesome pour les icônes -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
   body {
     font-family: 'Inter', sans-serif;
@@ -37,111 +39,64 @@
   header {
     height: 100vh;
     background: url('https://svgshare.com/i/14bW.svg') no-repeat center/cover;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 80px;
+    padding-top: 60px;
+  }
+  .hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255,255,255,0.8);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  }
+  .hero-content img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+  }
+  .hero-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-top: 60px;
-    overflow: hidden;
   }
-  header img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 3px solid #fff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  .hero-text h1 {
+    margin: 0;
+    font-size: 2.2rem;
   }
-  header h1 {
-    margin: 10px 0 0;
-    font-size: 3rem;
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeInUp 1s forwards 0.3s;
-  }
-  header p {
-    margin: 10px 0 20px;
-    font-size: 1.3rem;
+  .hero-text p {
+    margin: 8px 0;
+    font-size: 1.2rem;
     color: #555;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards 0.6s;
   }
 
   /* --------- Icônes sociales --------- */
   .socials {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 20px;
+    gap: 15px;
+    margin-top: 8px;
   }
   .socials a {
-    font-size: 28px;
+    font-size: 26px;
     color: #1a1a1a;
+    text-decoration: none;
     transition: color 0.3s;
   }
-  .socials a:hover {
-    color: #4da3ff;
-  }
+  .socials a:hover { color: #4da3ff; }
 
   /* --------- Sections --------- */
   section {
     padding: 100px 20px;
     max-width: 1000px;
     margin: auto;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   }
-  section.visible { opacity: 1; transform: translateY(0); }
   h2 { text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: #1a1a1a; }
-
-  /* --------- Projets --------- */
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-  }
-  .project-card {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-  }
-  .project-card:hover {
-    transform: translateY(-10px) rotate(-1deg);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
-  }
-
-  /* --------- Contact --------- */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    margin: auto;
-  }
-  input, textarea {
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    width: 100%;
-  }
-  button {
-    padding: 14px;
-    border: none;
-    border-radius: 8px;
-    background: #1a1a1a;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  button:hover { background: #333; }
 
   /* --------- Footer --------- */
   footer {
@@ -149,11 +104,6 @@
     color: white;
     text-align: center;
     padding: 20px;
-  }
-
-  /* Animations CSS */
-  @keyframes fadeInUp {
-    to { opacity: 1; transform: translateY(0); }
   }
 </style>
 </head>
@@ -168,62 +118,43 @@
 
 <!-- Section Hero -->
 <header>
-  <img src="https://via.placeholder.com/150" alt="Ma Photo"> <!-- 🔄 Mets ta photo ici -->
-  <div class="socials">
-    <a href="https://github.com/TonGithub" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/in/TonLinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://twitter.com/TonTwitter" target="_blank"><i class="fab fa-twitter"></i></a>
+  <div class="hero-content">
+    <!-- 🔄 Mets ta photo locale -->
+    <img src="images/moi.jpg" alt="Ma Photo"> 
+    <div class="hero-text">
+      <h1>Ton Nom</h1>
+      <p>Ingénieur Full Stack</p>
+      <div class="socials">
+        <a href="https://github.com/TonGithub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/TonLinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/TonTwitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
   </div>
-  <h1>Ton Nom</h1>
-  <p>Ingénieur Full Stack</p>
 </header>
 
 <!-- À propos -->
 <section id="about">
   <h2>À propos de moi</h2>
-  <p>Bonjour ! Je suis [Ton Nom], passionné(e) par le développement web et la création de portfolios modernes. 
-  Je combine design élégant et interactivité pour offrir une expérience unique.</p>
+  <p>Ici tu peux écrire ta présentation.</p>
 </section>
 
 <!-- Projets -->
 <section id="projects">
   <h2>Mes Projets</h2>
-  <div class="projects">
-    <div class="project-card"> <h3>Projet 1</h3> <p>HTML, CSS, JS</p> </div>
-    <div class="project-card"> <h3>Projet 2</h3> <p>React, Tailwind CSS</p> </div>
-    <div class="project-card"> <h3>Projet 3</h3> <p>Python, Flask</p> </div>
-  </div>
+  <p>Exemple : projet React, projet Flask, etc.</p>
 </section>
 
 <!-- Contact -->
 <section id="contact">
   <h2>Contactez-moi</h2>
-  <form>
-    <input type="text" placeholder="Votre nom" required>
-    <input type="email" placeholder="Votre email" required>
-    <textarea rows="5" placeholder="Votre message" required></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
+  <p>Email : tonmail@example.com</p>
 </section>
 
 <!-- Footer -->
 <footer>
   <p>© 2025 A_DAHER. Tous droits réservés.</p>
 </footer>
-
-<script>
-  // Animation fade-in au scroll
-  const sections = document.querySelectorAll('section');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  sections.forEach(section => observer.observe(section));
-</script>
 
 </body>
 </html>
