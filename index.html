@@ -422,22 +422,57 @@ section.visible { opacity: 1; transform: translateY(0); }
 h2 { text-align: left; margin-bottom: 40px; font-size: 1.5rem; color: #1a1a1a; }
 
 /* ---------- Projets ---------- */
-.projects {
+.projects-grid {
+  max-width: 3800px; /* plus large que 1000px */
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 40px;
 }
-.project-card {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-.project-card:hover {
-  transform: translateY(-10px) rotate(-1deg);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
-}
+
+
+    /* Chaque projet */
+    .project {
+      text-align: center;
+    }
+
+    /* Image pleine largeur, hauteur auto */
+    .project img {
+      width: 100%;       /* toutes les images ont la même largeur */
+      height: 390px;      /* ajuste la hauteur pour voir toute l'image */
+      border-radius: 6px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .project img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Titre et description */
+    .project h3 {
+      margin: 12px 0 6px 0;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .project p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.4;
+    }
+
+    /* Responsive mobile */
+    @media (max-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
 
 /* ---------- Contact ---------- */
 form {
@@ -552,7 +587,7 @@ Elles sont conçues pour supporter l’analytique en temps réel et alimenter di
       <p>
 Une fois les données disponibles et fiables, je conçois des modèles de Machine Learning et d’IA générative afin de détecter des tendances, prévoir les comportements et optimiser les opérations.
 <br>
-Grâce aux pratiques MLOps, les modèles conservent leur performance et leur évolutivité au sein de pipelines analytiques modernes, permettant de ce fait des analyses robustes allant de la prévision à la segmentation, jusqu’à l’optimisation.      </p>
+Grâce aux pratiques MLOps, les modèles conservent leur performance et leur évolutivité au sein de pipelines analytiques modernes, permettant des analyses robustes allant de la prévision à la segmentation, jusqu’à l’optimisation.      </p>
       <br>
       <div class="tech-stack">
         <strong>Tech stack :</strong>
@@ -598,7 +633,7 @@ Cette étape convertit la donnée en insights concrets, accélérant la prise de
         <h3>Data Analyste & Planification</h3>
         <p><strong>Groupe Duval – Paris</strong></p>
         <p>Pilotage des budgets, analyse KPI, gestion des risques et automatisation du reporting (Excel, Power BI).</p>
-        <span>2024 – 2025</span>
+        <span>2023 – 2025</span>
       </div>
     </div>
 
@@ -607,7 +642,7 @@ Cette étape convertit la donnée en insights concrets, accélérant la prise de
         <h3>Data Scientist</h3>
         <p><strong>EPROAD – Amiens</strong></p>
         <p>Optimisation combinatoire, modèles prédictifs, intégration ML et validation sur données réelles.</p>
-        <span>2022 – 2024</span>
+        <span>2021 – 2024</span>
       </div>
     </div>
 
@@ -633,27 +668,72 @@ Cette étape convertit la donnée en insights concrets, accélérant la prise de
 </section>
 
 
+
+
+
+
+
+
+
+
+
+
 <!-- Projets -->
-<section id="projects">
-  <h2>Projets personnels</h2>
-  <div class="projects">
-    <div class="project-card">
-      <h3>Analyse des ventes de mobilier</h3>
-      <p>Dashboard Excel interactif utilisant SQL et Power Query pour l'analyse des ventes de mobilier.</p>
-      <a href="https://github.com/A-Daher/Dashboard---Analyse-des-Ventes-de-Mobilier" target="_blank">Voir le projet</a>
-    </div>
-    <div class="project-card">
-      <h3>Tableau de bord Superstore</h3>
-      <p>Tableau de bord interactif développé avec Streamlit pour analyser les ventes, les profits et les réductions du Superstore.</p>
-      <a href="https://github.com/A-Daher/SuperstoreDashboard" target="_blank">Voir le projet</a>
-    </div>
-    <div class="project-card">
-      <h3>Prédiction et routage en Supply Chain</h3>
-      <p>Projet complet en Supply Chain intégrant la prédiction des ruptures de stock (backorder) avec des modèles de Machine Learning.</p>
-      <a href="https://github.com/A-Daher/SupplyChain-Prediction-Routing" target="_blank">Voir le projet</a>
-    </div>
+
+
+  <section id="projects"> 
+    <h2>Projets personnels</h2> 
+    <div class="projects-grid"> 
+      <div class="projects-grid">
+     <!-- Projet 1 --> 
+      <div class="project">
+        <a href="https://github.com/A-Daher" target="_blank">
+        <img src="images/projet3.jpg" alt="Projet 1"> </a> 
+        <h3>Analyse des ventes de mobilier</h3> 
+        <p>Dashboard Excel interactif utilisant SQL et Power Query pour analyser les ventes.</p> </div> 
+
+
+        <!-- Projet 2 --> 
+         <div class="project"> 
+          <a href="https://github.com/A-Daher" target="_blank">
+          <img src="images/projet4.jpg" alt="Projet 2"> </a> 
+          <h3>Superstore Dashboard</h3> 
+          <p>Application Streamlit permettant d’analyser les ventes et les profits d’un supermarché.</p> 
+        </div> 
+
+         </div>
+
+          <div class="projects-grid"> 
+            <div class="projects-grid">
+
+  
+    <!-- Projet 1 --> 
+      <div class="project">
+        <a href="https://github.com/A-Daher" target="_blank">
+        <img src="images/projet3.jpg" alt="Projet 1"> </a> 
+        <h3>Analyse des ventes de mobilier</h3> 
+        <p>Dashboard Excel interactif utilisant SQL et Power Query pour analyser les ventes.</p> </div> 
+
+
+        <!-- Projet 2 --> 
+         <div class="project"> 
+          <a href="https://github.com/A-Daher" target="_blank">
+          <img src="images/projet4.jpg" alt="Projet 2"> </a> 
+          <h3>Superstore Dashboard</h3> 
+          <p>Application Streamlit permettant d’analyser les ventes et les profits d’un supermarché.</p> 
+        </div> 
+
   </div>
-</section>
+ 
+    </div> 
+  </section>
+
+
+
+
+
+
+
 
 
 <!-- Contact -->
