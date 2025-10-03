@@ -2,29 +2,9 @@
 <html lang="fr">
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-HoH/p1Z6K7dcnrO1j/d2o6i3/Lg0HkRAhzl9woejZb0nlV2M5t+Kk1L7uVKNhSgMJhZhx0F6cYzJwP6Frd9U2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- FontAwesome CDN gratuit -->
-<div class="socials">
-  <!-- GitHub SVG -->
-  <a href="https://github.com/A-Daher" target="_blank">
-    <svg viewBox="0 0 24 24">
-      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.033-1.415-4.033-1.415-.546-1.385-1.333-1.753-1.333-1.753-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.235 1.84 1.235 1.07 1.834 2.807 1.304 3.492.997.108-.774.418-1.304.762-1.604-2.665-.305-5.466-1.334-5.466-5.934 0-1.31.467-2.38 1.235-3.22-.124-.304-.535-1.527.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 0 1 3-.404c1.02.005 2.045.137 3 .404 2.29-1.552 3.296-1.23 3.296-1.23.653 1.65.242 2.872.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.625-5.475 5.922.43.37.815 1.096.815 2.21v3.285c0 .32.218.694.825.576C20.565 21.796 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
-    </svg>
-  </a>
-  <!-- LinkedIn SVG -->
-  <a href="https://www.linkedin.com/in/oumalkaire-a-daher/" target="_blank">
-    <svg viewBox="0 0 24 24">
-      <path d="M22.23 0H1.77C.79 0 0 .774 0 1.728v20.544C0 23.225.79 24 1.77 24h20.46C23.21 24 24 23.225 24 22.272V1.728C24 .774 23.21 0 22.23 0zM7.06 20.452H3.558V9h3.502v11.452zM5.31 7.505a2.03 2.03 0 1 1 0-4.06 2.03 2.03 0 0 1 0 4.06zm15.14 12.947h-3.502v-5.605c0-1.337-.024-3.063-1.865-3.063-1.867 0-2.153 1.457-2.153 2.963v5.705h-3.502V9h3.36v1.561h.048c.468-.886 1.609-1.822 3.309-1.822 3.537 0 4.187 2.328 4.187 5.356v6.356z"/>
-    </svg>
-  </a>
-  <!-- Twitter SVG -->
-  <a href="https://twitter.com/TonTwitter" target="_blank">
-    <svg viewBox="0 0 24 24">
-      <path d="M24 4.557a9.843 9.843 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-8.379 4.482A13.94 13.94 0 0 1 1.671 3.149 4.916 4.916 0 0 0 3.195 9.723 4.9 4.9 0 0 1 .964 9.1v.062a4.916 4.916 0 0 0 3.946 4.816 4.902 4.902 0 0 1-2.212.084 4.917 4.917 0 0 0 4.588 3.414 9.867 9.867 0 0 1-6.102 2.104c-.396 0-.787-.023-1.175-.069a13.945 13.945 0 0 0 7.557 2.212c9.054 0 14.001-7.496 14.001-13.986 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.557z"/>
-    </svg>
-  </a>
-</div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oumalkaire A. DAHER - Data Scientist</title>
 
 <style>
 /* ---------- Global ---------- */
@@ -38,45 +18,39 @@ body {
 a { text-decoration: none; color: inherit; }
 
 /* ---------- Navigation ---------- */
-/* ---------- Navigation ---------- */
-/* ---------- Navigation ---------- */
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: flex-end;  /* liens alignés à droite */
-  gap: 40px;                   /* espace entre les liens */
-  padding: 20px 40px;          /* augmente l'épaisseur de la barre */
-  font-size: 1rem;           /* texte plus grand */
+  justify-content: flex-end;
+  gap: 40px;
+  padding: 20px 40px;
+  font-size: 1rem;
   background: rgba(247, 243, 243, 0.95); 
   backdrop-filter: blur(5px);
   z-index: 1000;
-  box-sizing: border-box;      /* inclut le padding dans la largeur */
+  box-sizing: border-box;
 }
 
-/* Assure que les liens ne se coupent jamais */
 nav a {
   color: black;
   font-weight: normal;
   transition: color 0.3s;
-  white-space: nowrap; /* empêche le texte de passer à la ligne */
+  white-space: nowrap;
 }
 
-/* Hover */
 nav a:hover { color: white; }
 
-/* Responsive : réduit gap et taille sur mobile */
-@media(max-width: 768px) {
-  nav {
-    justify-content: center;
-    gap: 20px;
-    padding: 15px 20px;
-    font-size: 1rem;
-  }
+.lang-switcher {
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
 }
-
 
 /* ---------- Hero Section ---------- */
 header {
@@ -90,10 +64,9 @@ header {
   background-image: url('images/image.PNG');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* reste statique */
+  background-attachment: fixed;
 }
 
-/* Photo ronde et texte (contenu du header) */
 .header-content {
   display: flex;
   align-items: center;
@@ -101,10 +74,10 @@ header {
   z-index: 2;
   position: relative;
   transition: transform 0.5s ease, opacity 0.5s ease;
-  margin-left: 270px; /* Décalage vers la droite */
-  margin-top: 20px;   /* <-- descend le contenu */
-
+  margin-left: 270px;
+  margin-top: 20px;
 }
+
 .profile-photo {
   width: 160px;
   height: 160px;
@@ -113,32 +86,36 @@ header {
   border: 3px solid;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 .hero-text h1 {
-  margin: 1 ;
+  margin: 1;
   font-size: 2.7rem;
   color: black;
 }
+
 .hero-text p {
   margin: 1;
   font-size: 1.3rem;
   color: #1a1a1a;
 }
+
 .socials {
   display: flex;
   gap: 15px;
-  margin-bottom: 10px; /* espace sous les icônes */
+  margin-bottom: 10px;
 }
 
 .socials a {
   font-size: 28px;
-  color: black; /* icônes en noir */
+  color: black;
   transition: color 0.3s;
 }
 
 .socials a:hover {
-  color: #4da3ff; /* couleur au survol */
+  color: #4da3ff;
 }
-/* -------- Timeline Moderne (fond clair) -------- */
+
+/* -------- Timeline Moderne -------- */
 #experience {
   color: #1a1a1a;
   padding: 100px 20px;
@@ -170,9 +147,7 @@ header {
 }
 
 .exp-box::before {
-  content: "";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
+  content: "●";
   position: absolute;
   width: 40px;
   height: 40px;
@@ -218,6 +193,7 @@ header {
   margin-top: 10px;
   color: #888;
 }
+
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(40px);
@@ -229,67 +205,10 @@ header {
   transform: translateY(0);
 }
 
-.form-row {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.form-row input {
-  flex: 1;
-  min-width: 200px;
-}
-
-
-#contact p {
-  font-size: 1.1rem;
-  color: black;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: auto;
-}
-
-input, textarea {
-  padding: 16px 14px; /* plus grand et confortable */
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  width: 100%;
-}
-
-button {
-  padding: 16px;
-  border: none;
-  border-radius: 8px;
-  background: #1a1a1a;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover { background: #333; }
-
-.socials a {
-  font-size: 28px;
-  color: #1a1a1a;
-  transition: color 0.3s;
-}
-
-.socials a:hover { color: #4da3ff; }
-/*---------------------------*/
-
-
- /* ---------- Skills Section simplifiée ---------- */
+/* ---------- Skills Section ---------- */
 .skills-columns {
   display: flex;
-  justify-content: space-around; /* espace horizontal entre skills */
+  justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
   max-width: 1200px;
@@ -299,15 +218,13 @@ button:hover { background: #333; }
 
 .skills-columns .skill {
   flex: 1 1 200px;
-  text-align: left;   /* ✅ texte aligné à gauche */
+  text-align: left;
   padding: 0;
   background: none;
   box-shadow: none;
   border-radius: 0;
-  transition: none;
 }
 
-/* Logo au-dessus du texte */
 .skills-columns .skill .skill-title {
   display: block;
   font-size: 1.3rem;
@@ -316,25 +233,23 @@ button:hover { background: #333; }
 
 .skills-columns .skill .skill-title img {
   display: block;
-  margin: 0 auto 8px auto; /* centre uniquement l'image */
+  margin: 0 auto 8px auto;
   width: 50px;
   height: auto;
 }
 
-/* Texte descriptif */
 .skills-columns .skill p {
   font-size: 1rem;
   line-height: 1.4;
   color: #333;
   margin-bottom: 10px;
-  text-align: left;  /* ✅ force le paragraphe à gauche */
+  text-align: left;
 }
 
-/* Tech stack */
 .skills-columns .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* ✅ aligne à gauche */
+  justify-content: flex-start;
   gap: 6px;
 }
 
@@ -351,62 +266,82 @@ button:hover { background: #333; }
   font-weight: 500;
 }
 
+/* ---------- Projects Section - CORRECTIONS APPLIQUÉES ---------- */
+#projects {
+  max-width: 1200px;
+}
 
-/* Responsive : petit écran (<900px) */
-@media (max-width: 900px) {
-  .skills-columns {
-    flex-direction: column; /* empile verticalement */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  gap: 40px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Chaque projet - SANS CADRE */
+.project {
+  text-align: center;
+  /* Suppression du fond, padding et ombre */
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Image avec hauteur réduite */
+.project img {
+  width: 100%;
+  height: 250px; /* Hauteur réduite pour mieux s'adapter */
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Titre et description */
+.project h3 {
+  margin: 15px 0 8px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.project p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
     gap: 30px;
-    align-items: center;
-  }
-  .skills-columns .skill {
-    flex: none;
-    width: 100%;
   }
 }
 
-
-/*-----------------------------------*/
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .exp-box {
-    width: 100%;
-    left: 0 !important;
-    text-align: left;
-    padding-left: 60px;
-    margin-bottom: 30px;
-  }
-
-  .exp-box::before {
-    left: 15px;
-    right: auto;
-  }
-
-  .modern-timeline::after {
-    left: 30px;
-  }
+/* ---------- Contact Section ---------- */
+#contact p {
+  font-size: 1.1rem;
+  color: black;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
 }
 
-
-@keyframes slideUp {
-  to { opacity: 1; transform: translateY(0); }
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
-
-/* Responsive timeline */
-@media screen and (max-width: 768px) {
-  .timeline-item {
-    width: 100%;
-    left: 0 !important;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .timeline-item::before {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
 
 /* ---------- Sections ---------- */
 section {
@@ -416,91 +351,19 @@ section {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  
-}
-section.visible { opacity: 1; transform: translateY(0); }
-h2 { text-align: left; margin-bottom: 40px; font-size: 1.5rem; color: #1a1a1a; }
-
-/* ---------- Projets ---------- */
-.projects-grid {
-  max-width: 3800px; /* plus large que 1000px */
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-  gap: 40px;
 }
 
-
-    /* Chaque projet */
-    .project {
-      text-align: center;
-    }
-
-    /* Image pleine largeur, hauteur auto */
-    .project img {
-      width: 100%;       /* toutes les images ont la même largeur */
-      height: 320px;      /* ajuste la hauteur pour voir toute l'image */
-      border-radius: 6px;
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .project img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-
-    /* Titre et description */
-    .project h3 {
-      margin: 12px 0 6px 0;
-      font-size: 1.2rem;
-      font-weight: 700;
-    }
-
-    .project p {
-      margin: 0;
-      font-size: 0.95rem;
-      color: #444;
-      line-height: 1.4;
-    }
-
-    /* Responsive mobile */
-    @media (max-width: 768px) {
-      .projects-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-
-
-/* ---------- Contact ---------- */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin-left: 30px; /* plus centré */
+section.visible { 
+  opacity: 1; 
+  transform: translateY(0); 
 }
 
-input, textarea {
-  padding: 20px 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  width: 100%;
+h2 { 
+  text-align: left; 
+  margin-bottom: 40px; 
+  font-size: 1.5rem; 
+  color: #1a1a1a; 
 }
-button {
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
-  background: #1a1a1a;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-button:hover { background: #333; }
 
 /* ---------- Footer ---------- */
 footer {
@@ -512,14 +375,59 @@ footer {
 
 /* ---------- Responsive ---------- */
 @media(max-width: 768px) {
-  header {
+  nav {
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+  
+  .header-content {
     flex-direction: column;
+    margin-left: 0;
     text-align: center;
     gap: 20px;
-    padding: 0 20px;
   }
-  .header-content { flex-direction: column; align-items: center; }
-  .profile-photo { margin-bottom: 20px; }
+  
+  .profile-photo {
+    margin-bottom: 20px;
+  }
+  
+  .skills-columns {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .skills-columns .skill {
+    flex: none;
+    width: 100%;
+  }
+  
+  .exp-box {
+    width: 100%;
+    left: 0 !important;
+    text-align: left;
+    padding-left: 60px;
+    margin-bottom: 30px;
+  }
+  
+  .exp-box::before {
+    left: 15px;
+    right: auto;
+  }
+  
+  .modern-timeline::after {
+    left: 30px;
+  }
+}
+
+@media(max-width: 900px) {
+  .skills-columns {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
 }
 </style>
 </head>
@@ -527,50 +435,49 @@ footer {
 
 <!-- Navigation -->
 <nav>
-  <a href="#about">Compétences</a>
-  <a href="#experience">Parcours professionnel</a>
-  <a href="#projects">Projets personnels</a>
-  <a href="#contact">Contact</a>
+  <a href="#about" data-key="navSkills">Compétences</a>
+  <a href="#experience" data-key="navExperience">Parcours professionnel</a>
+  <a href="#projects" data-key="navProjects">Projets personnels</a>
+  <a href="#contact" data-key="navContact">Contact</a>
+  <select id="lang-switcher" class="lang-switcher">
+    <option value="fr">FR</option>
+    <option value="en">EN</option>
+  </select>
 </nav>
 
 <!-- Section Hero -->
 <header>
   <div class="header-content" id="headerContent">
-  <img src="images/profil.jpg" alt="Oumalkaire A.DAHER" class="profile-photo">
-  <div class="hero-text">
-    <div class="socials">
-      <a href="https://github.com/A-Daher" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/oumalkaire-a-daher" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/TonTwitter" target="_blank"><i class="fab fa-twitter"></i></a>
-    </div>
+    <img src="images/profil.jpg" alt="Oumalkaire A.DAHER" class="profile-photo">
     <div class="hero-text">
-      <h1>Oumalkaire A.DAHER</h1>
-      <p>Data Scientist | Recherche opérationnelle </p>
-      
+      <div class="socials">
+        <a href="https://github.com/A-Daher" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/oumalkaire-a-daher" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/TonTwitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+      <h1>Oumalkaire A. DAHER</h1>
+      <p data-key="heroJob">Data Scientiste | Recherche opérationnelle</p>
     </div>
   </div>
 </header>
 
 <!-- Compétences -->
 <section id="about">
-  <h2>Compétences</h2>
+  <h2 data-key="aboutTitle">Compétences</h2>
   <div class="skills-columns">
-
     <!-- Bloc 1 : Architecture & Ingénierie des données -->
     <div class="skill">
-      <h3 class="skill-title">
-        <img src="https://img.icons8.com/?size=100&id=11349&format=png&color=000000" 
-             alt="Architecture de données">
+      <h3 class="skill-title" data-key="skill1Title">
+        <img src="https://img.icons8.com/?size=100&id=11349&format=png&color=000000" alt="Architecture de données">
         <br>
         Architecture des données
       </h3>
-      <p>
-Je développe et mets en place des pipelines ETL/ELT automatisés, capables de collecter, intégrer et transformer des données provenant de multiples sources hétérogènes (API, ERP, fichiers plats, etc...).
-
-Elles sont conçues pour supporter l’analytique en temps réel et alimenter différents environnements tels que data warehouses, data lakes et dashboards. Une gouvernance efficace protège la qualité et la sécurité des données tout en assurant leur traçabilité, fournissant une base fiable pour des décisions stratégiques.    </p>
-       <br>
+      <p data-key="skill1Desc">
+        Je développe et mets en place des pipelines ETL/ELT automatisés, capables de collecter, intégrer et transformer des données provenant de multiples sources hétérogènes (API, ERP, fichiers plats, etc...).
+      </p>
+      <br>
       <div class="tech-stack">
-        <strong>Tech stack :</strong>
+        <strong data-key="techStack">Tech stack :</strong>
         <span>SQL</span><span>PostgreSQL</span><span>Spark</span><span>Databricks</span>
         <span>Airflow</span><span>Azure</span><span>Git</span><span>GitHub Actions</span><span>Linux</span>
       </div>
@@ -578,19 +485,17 @@ Elles sont conçues pour supporter l’analytique en temps réel et alimenter di
 
     <!-- Bloc 2 : Data Science & Intelligence Artificielle -->
     <div class="skill">
-      <h3 class="skill-title">
-        <img src="https://img.icons8.com/?size=100&id=12592&format=png&color=000000" 
-             alt="Data Science">
+      <h3 class="skill-title" data-key="skill2Title">
+        <img src="https://img.icons8.com/?size=100&id=12592&format=png&color=000000" alt="Data Science">
         <br>
         Data Science & Intelligence Artificielle
       </h3>
-      <p>
-Une fois les données disponibles et fiables, je conçois des modèles de Machine Learning et d’IA générative afin de détecter des tendances, prévoir les comportements et optimiser les opérations.
-<br>
-Grâce aux pratiques MLOps, les modèles conservent leur performance et leur évolutivité au sein de pipelines analytiques modernes, permettant des analyses robustes allant de la prévision à la segmentation, jusqu’à l’optimisation.      </p>
+      <p data-key="skill2Desc">
+        Une fois les données disponibles et fiables, je conçois des modèles de Machine Learning et d'IA générative afin de détecter des tendances, prévoir les comportements et optimiser les opérations.
+      </p>
       <br>
       <div class="tech-stack">
-        <strong>Tech stack :</strong>
+        <strong data-key="techStack">Tech stack :</strong>
         <span>Python</span><span>Scikit-learn</span><span>TensorFlow</span><span>Keras</span>
         <span>PyTorch</span><span>HuggingFace</span><span>LangChain</span><span>OR-Tools</span><span>CPLEX</span><span>Streamlit</span>
       </div>
@@ -598,246 +503,331 @@ Grâce aux pratiques MLOps, les modèles conservent leur performance et leur év
 
     <!-- Bloc 3 : Optimisation & Recherche opérationnelle -->
     <div class="skill">
-      <h3 class="skill-title">
-        <img src="https://img.icons8.com/?size=100&id=XZfQhFwZm1qP&format=png&color=000000" 
-             alt="Optimisation">
+      <h3 class="skill-title" data-key="skill3Title">
+        <img src="https://img.icons8.com/?size=100&id=XZfQhFwZm1qP&format=png&color=000000" alt="Optimisation">
         <br>
         Business Intelligence & Data Visualisation
       </h3>
-      <p>
-Les résultats seront alors transcodés en dashboards interactifs et KPI actionnables via à des outils de visualisation.
-Cette étape convertit la donnée en insights concrets, accélérant la prise de décision et maximisant l’impact sur la performance de l’entreprise.      
+      <p data-key="skill3Desc">
+        Les résultats seront alors transcodés en dashboards interactifs et KPI actionnables via des outils de visualisation. Par conséquent, les décideurs disposeront de rapports clairs, alertes en temps réel et indicateurs stratégiques.
+      </p>
       <br>
-      Par conséquent, les décideurs disposeront de rapports clairs, alertes en temps réel et indicateurs stratégiques.
-        </p>
-          <br>
       <div class="tech-stack">
-        <strong>Tech stack :</strong>
-         <span>Power BI</span><span>DAX</span><span>Excel</span><span>Tableau</span>
+        <strong data-key="techStack">Tech stack :</strong>
+        <span>Power BI</span><span>DAX</span><span>Excel</span><span>Tableau</span>
         <span>Visualisation</span><span>KPI</span><span>Alertes</span>
       </div>
     </div>
-
+  </div>
 </section>
 
-
-
-
-<!-- ---------- Section Expérience ---------- -->
+<!-- Section Expérience -->
 <section id="experience">
-  <h2>Parcours Professionnel</h2>
+  <h2 data-key="expTitle">Parcours Professionnel</h2>
   <div class="modern-timeline">
-
     <div class="exp-box left animate-on-scroll">
       <div class="exp-content">
-        <h3>Data Analyste & Planification</h3>
-        <p><strong>Groupe Duval – Paris</strong></p>
-        <p>Pilotage des budgets, analyse KPI, gestion des risques et automatisation du reporting (Excel, Power BI).</p>
-        <span>2023 – 2025</span>
+        <h3 data-key="exp1Title">Data Analyste & Financière</h3>
+        <p><strong data-key="exp1Company">Groupe Duval – Paris</strong></p>
+        <p data-key="exp1Desc">Pilotage des budgets, analyse KPI, gestion des risques et automatisation du reporting (Excel, Power BI).</p>
+        <span data-key="exp1Date">2023 – 2025</span>
       </div>
     </div>
 
     <div class="exp-box right animate-on-scroll">
       <div class="exp-content">
-        <h3>Data Scientist</h3>
-        <p><strong>EPROAD – Amiens</strong></p>
-        <p>Optimisation combinatoire, modèles prédictifs, intégration ML et validation sur données réelles.</p>
-        <span>2021 – 2024</span>
+        <h3 data-key="exp2Title">Data Scientiste</h3>
+        <p><strong data-key="exp2Company">EPROAD – Amiens</strong></p>
+        <p data-key="exp2Desc">Optimisation combinatoire, modèles prédictifs, intégration ML et validation sur données réelles.</p>
+        <span data-key="exp2Date">2021 – 2024</span>
       </div>
     </div>
 
     <div class="exp-box left animate-on-scroll">
       <div class="exp-content">
-        <h3>Data Analyst</h3>
-        <p><strong>FNAC Darty – Ivry</strong></p>
-        <p>Prévision de la demande, création de dashboards interactifs et automatisation du reporting.</p>
-        <span>2020 – 2021</span>
+        <h3 data-key="exp3Title">Data Analyste</h3>
+        <p><strong data-key="exp3Company">FNAC Darty – Ivry</strong></p>
+        <p data-key="exp3Desc">Prévision de la demande, création de dashboards interactifs et automatisation du reporting.</p>
+        <span data-key="exp3Date">2020 – 2021</span>
       </div>
     </div>
 
     <div class="exp-box right animate-on-scroll">
       <div class="exp-content">
-        <h3>Chargée d'Études</h3>
-        <p><strong>LMAH – Le Havre</strong></p>
-        <p>Modélisation énergétique, développement d’algorithmes IA et pipelines de traitement automatisés.</p>
-        <span>2019 – 2020</span>
+        <h3 data-key="exp4Title">Data Scientiste - Intern</h3>
+        <p><strong data-key="exp4Company">LMAH – Le Havre</strong></p>
+        <p data-key="exp4Desc">Modélisation énergétique, développement d'algorithmes IA et pipelines de traitement automatisés.</p>
+        <span data-key="exp4Date">2018 – 2020</span>
       </div>
     </div>
-
   </div>
 </section>
 
+<!-- Projets - CORRECTIONS APPLIQUÉES -->
+<section id="projects"> 
+  <h2 data-key="projectsTitle">Projets personnels</h2> 
+  <div class="projects-grid">
+    <!-- Projet 1 -->
+    <div class="project">
+      <a href="https://github.com/A-Daher" target="_blank">
+        <img src="images/projet1.PNG" alt="Projet 1">
+      </a>
+      <h3 data-key="project1Title">Analyse des ventes de mobilier</h3>
+      <p data-key="project1Desc">Dashboard Excel interactif utilisant SQL et Power Query pour analyser les ventes.</p>
+    </div>
 
+    <!-- Projet 2 -->
+    <div class="project">
+      <a href="https://github.com/A-Daher" target="_blank">
+        <img src="images/projet2.PNG" alt="Projet 2">
+      </a>
+      <h3 data-key="project2Title">Analyse des ventes de mobilier</h3>
+      <p data-key="project2Desc">Dashboard Excel interactif utilisant SQL et Power Query pour analyser les ventes.</p>
+    </div>
 
+    <!-- Projet 3 -->
+    <div class="project">
+      <a href="https://github.com/A-Daher" target="_blank">
+        <img src="images/projet3.PNG" alt="Projet 3">
+      </a>
+      <h3 data-key="project3Title">Superstore Dashboard</h3>
+      <p data-key="project3Desc">Application Streamlit permettant d'analyser les ventes et les profits d'un supermarché.</p>
+    </div>
 
-
-
-
-
-
-
-
-
-<!-- Projets -->
-
-
-  <section id="projects"> 
-    <h2>Projets personnels</h2> 
-    <div class="projects-grid"> 
-      <div class="projects-grid">
-     <!-- Projet 1 --> 
-      <div class="project">
-        <a href="https://github.com/A-Daher" target="_blank">
-        <img src="images/projet1.PNG" alt="Projet 1"> </a> 
-        <h3>Analyse des ventes de mobilier</h3> 
-        <p>Dashboard Excel interactif utilisant SQL et Power Query pour analyser les ventes.</p> </div> 
-
-
-        <!-- Projet 2 --> 
-    
-        <div class="project">
-                <a href="https://github.com/A-Daher" target="_blank">
-                <img src="images/projet3.PNG" alt="Projet 1"> </a> 
-                <h3>Analyse des ventes de mobilier</h3> 
-                <p>Dashboard Excel interactif utilisant SQL et Power Query pour analyser les ventes.</p> </div> 
-
-
-
-
-         </div>
-
-          <div class="projects-grid"> 
-            <div class="projects-grid">
-
-  
-    <!-- Projet 1 --> 
-           <div class="project"> 
-          <a href="https://github.com/A-Daher" target="_blank">
-          <img src="images/projet2.PNG" alt="Projet 2"> </a> 
-          <h3>Superstore Dashboard</h3> 
-          <p>Application Streamlit permettant d’analyser les ventes et les profits d’un supermarché.</p> 
-        </div> 
-
-        <!-- Projet 2 --> 
-         <div class="project"> 
-          <a href="https://github.com/A-Daher" target="_blank">
-          <img src="images/projet4.PNG" alt="Projet 2"> </a> 
-          <h3>Superstore Dashboard</h3> 
-          <p>Application Streamlit permettant d’analyser les ventes et les profits d’un supermarché.</p> 
-        </div> 
-
+    <!-- Projet 4 -->
+    <div class="project">
+      <a href="https://github.com/A-Daher" target="_blank">
+        <img src="images/projet4.PNG" alt="Projet 4">
+      </a>
+      <h3 data-key="project4Title">Superstore Dashboard</h3>
+      <p data-key="project4Desc">Application Streamlit permettant d'analyser les ventes et les profits d'un supermarché.</p>
+    </div>
   </div>
- 
-    </div> 
-  </section>
-
-
-
-
-
-
-
-
+</section>
 
 <!-- Contact -->
 <section id="contact">
-  <h2>Contactez-moi</h2>
-<p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto 30px; line-height: 1.6; text-align: center; color: black;">
+  <h2 data-key="contactTitle">Contactez-moi</h2>
+  <p data-key="contactText">
     Vous souhaitez tirer parti de vos données, optimiser vos processus ou résoudre un problème business complexe ?<br><br>
-    N’hésitez pas à me contacter directement à 
+    N'hésitez pas à me contacter directement à 
     <a href="https://mail.google.com/mail/?view=cm&to=oumalkaire.ad@gmail.com" target="_blank" style="color: black; text-decoration: underline; font-weight: bold;">
       oumalkaire.ad@gmail.com
     </a> 
     ou via mes réseaux pour en discuter !
   </p>
 
-  <!-- Icônes de contact -->
-  <div class="socials" style="display: flex; justify-content: center; gap: 25px; font-size: 2rem;">
-    <!-- Email -->
-  
-    <!-- GitHub -->
+  <div class="contact-socials">
     <a href="https://github.com/A-Daher" target="_blank" style="color: black;" title="GitHub">
       <i class="fab fa-github"></i>
     </a>
-    <!-- LinkedIn -->
     <a href="https://www.linkedin.com/in/oumalkaire-a-daher" target="_blank" style="color: black;" title="LinkedIn">
       <i class="fab fa-linkedin"></i>
     </a>
-    <!-- Twitter -->
     <a href="https://twitter.com/TonTwitter" target="_blank" style="color: black;" title="Twitter">
       <i class="fab fa-twitter"></i>
     </a>
   </div>
-
 </section>
-
 
 <!-- Footer -->
 <footer>
-  <p>© 2025 Oumalkaire A.DAHER. Tous droits réservés.</p>
+  <p data-key="footerText">© 2025 Oumalkaire A.DAHER. Tous droits réservés.</p>
 </footer>
 
 <script>
-  // Animation fade-in des SECTIONS au scroll
-  const sections = document.querySelectorAll('section');
-  const sectionObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        sectionObserver.unobserve(entry.target);
+// Système de traduction
+const translations = {
+  fr: {
+    // Navigation
+    navSkills: "Compétences",
+    navExperience: "Parcours professionnel",
+    navProjects: "Projets personnels",
+    navContact: "Contact",
+    
+    // Hero
+    heroJob: "Data Scientiste | Recherche opérationnelle",
+    
+    // Compétences
+    aboutTitle: "Compétences",
+    skill1Title: "Architecture des données",
+    skill1Desc: "Je développe et mets en place des pipelines ETL/ELT automatisés, capables de collecter, intégrer et transformer des données provenant de multiples sources hétérogènes (API, ERP, fichiers plats, etc...).",
+    skill2Title: "Data Science & Intelligence Artificielle",
+    skill2Desc: "Une fois les données disponibles et fiables, je conçois des modèles de Machine Learning et d'IA générative afin de détecter des tendances, prévoir les comportements et optimiser les opérations.",
+    skill3Title: "Business Intelligence & Data Visualisation",
+    skill3Desc: "Les résultats seront alors transcodés en dashboards interactifs et KPI actionnables via des outils de visualisation. Par conséquent, les décideurs disposeront de rapports clairs, alertes en temps réel et indicateurs stratégiques.",
+    techStack: "Tech stack :",
+    
+    // Expérience
+    expTitle: "Parcours Professionnel",
+    exp1Title: "Data Analyste & Financière",
+    exp1Company: "Groupe Duval – Paris",
+    exp1Desc: "Pilotage des budgets, analyse KPI, gestion des risques et automatisation du reporting (Excel, Power BI).",
+    exp1Date: "2023 – 2025",
+    exp2Title: "Data Scientiste",
+    exp2Company: "EPROAD – Amiens",
+    exp2Desc: "Optimisation combinatoire, modèles prédictifs, intégration ML et validation sur données réelles.",
+    exp2Date: "2021 – 2024",
+    exp3Title: "Data Analyste",
+    exp3Company: "FNAC Darty – Ivry",
+    exp3Desc: "Prévision de la demande, création de dashboards interactifs et automatisation du reporting.",
+    exp3Date: "2020 – 2021",
+    exp4Title: "Data Scientiste - Intern",
+    exp4Company: "LMAH – Le Havre",
+    exp4Desc: "Modélisation énergétique, développement d'algorithmes IA et pipelines de traitement automatisés.",
+    exp4Date: "2018 – 2020",
+    
+    // Projets
+    projectsTitle: "Projets personnels",
+    project1Title: "Analyse des ventes de mobilier",
+    project1Desc: "Dashboard Excel interactif utilisant SQL et Power Query pour analyser les ventes.",
+    project2Title: "Analyse des ventes de mobilier",
+    project2Desc: "Dashboard Excel interactif utilisant SQL et Power Query pour analyser les ventes.",
+    project3Title: "Superstore Dashboard",
+    project3Desc: "Application Streamlit permettant d'analyser les ventes et les profits d'un supermarché.",
+    project4Title: "Superstore Dashboard",
+    project4Desc: "Application Streamlit permettant d'analyser les ventes et les profits d'un supermarché.",
+    
+    // Contact
+    contactTitle: "Contactez-moi",
+    contactText: "Vous souhaitez tirer parti de vos données, optimiser vos processus ou résoudre un problème business complexe ?<br><br>N'hésitez pas à me contacter directement à <a href='https://mail.google.com/mail/?view=cm&to=oumalkaire.ad@gmail.com' target='_blank' style='color: black; text-decoration: underline; font-weight: bold;'>oumalkaire.ad@gmail.com</a> ou via mes réseaux pour en discuter !",
+    
+    // Footer
+    footerText: "© 2025 Oumalkaire A.DAHER. Tous droits réservés."
+  },
+  en: {
+    // Navigation
+    navSkills: "Skills",
+    navExperience: "Professional Experience",
+    navProjects: "Personal Projects",
+    navContact: "Contact",
+    
+    // Hero
+    heroJob: "Data Scientist | Operations Research",
+    
+    // Compétences
+    aboutTitle: "Skills",
+    skill1Title: "Data Architecture",
+    skill1Desc: "I develop and implement automated ETL/ELT pipelines capable of collecting, integrating and transforming data from multiple heterogeneous sources (APIs, ERP, flat files, etc.).",
+    skill2Title: "Data Science & Artificial Intelligence",
+    skill2Desc: "Once data is available and reliable, I design Machine Learning and generative AI models to detect trends, predict behaviors and optimize operations.",
+    skill3Title: "Business Intelligence & Data Visualization",
+    skill3Desc: "Results are then transcoded into interactive dashboards and actionable KPIs through visualization tools. Consequently, decision-makers have access to clear reports, real-time alerts and strategic indicators.",
+    techStack: "Tech stack:",
+    
+    // Expérience
+    expTitle: "Professional Experience",
+    exp1Title: "Data Analyst & Financial",
+    exp1Company: "Groupe Duval – Paris",
+    exp1Desc: "Budget management, KPI analysis, risk management and reporting automation (Excel, Power BI).",
+    exp1Date: "2023 – 2025",
+    exp2Title: "Data Scientist",
+    exp2Company: "EPROAD – Amiens",
+    exp2Desc: "Combinatorial optimization, predictive models, ML integration and validation on real data.",
+    exp2Date: "2021 – 2024",
+    exp3Title: "Data Analyst",
+    exp3Company: "FNAC Darty – Ivry",
+    exp3Desc: "Demand forecasting, creation of interactive dashboards and reporting automation.",
+    exp3Date: "2020 – 2021",
+    exp4Title: "Data Scientist - Intern",
+    exp4Company: "LMAH – Le Havre",
+    exp4Desc: "Energy modeling, AI algorithm development and automated processing pipelines.",
+    exp4Date: "2018 – 2020",
+    
+    // Projets
+    projectsTitle: "Personal Projects",
+    project1Title: "Furniture Sales Analysis",
+    project1Desc: "Interactive Excel dashboard using SQL and Power Query to analyze sales.",
+    project2Title: "Furniture Sales Analysis",
+    project2Desc: "Interactive Excel dashboard using SQL and Power Query to analyze sales.",
+    project3Title: "Superstore Dashboard",
+    project3Desc: "Streamlit application to analyze supermarket sales and profits.",
+    project4Title: "Superstore Dashboard",
+    project4Desc: "Streamlit application to analyze supermarket sales and profits.",
+    
+    // Contact
+    contactTitle: "Contact Me",
+    contactText: "Do you want to leverage your data, optimize your processes or solve a complex business problem?<br><br>Feel free to contact me directly at <a href='https://mail.google.com/mail/?view=cm&to=oumalkaire.ad@gmail.com' target='_blank' style='color: black; text-decoration: underline; font-weight: bold;'>oumalkaire.ad@gmail.com</a> or through my networks to discuss it!",
+    
+    // Footer
+    footerText: "© 2025 Oumalkaire A.DAHER. All rights reserved."
+  }
+};
+
+// Fonction pour appliquer la traduction
+function applyLanguage(lang) {
+  document.documentElement.lang = lang;
+  
+  // Mettre à jour tous les éléments avec data-key
+  const elements = document.querySelectorAll('[data-key]');
+  elements.forEach(element => {
+    const key = element.getAttribute('data-key');
+    if (translations[lang] && translations[lang][key]) {
+      if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+        element.placeholder = translations[lang][key];
+      } else {
+        element.innerHTML = translations[lang][key];
       }
-    });
-  }, { threshold: 0.1 });
-  sections.forEach(section => sectionObserver.observe(section));
-
-
-  // Animation du HEADER au scroll
-  const headerContent = document.getElementById('headerContent');
-  window.addEventListener('scroll', () => {
-    let scroll = window.scrollY;
-    headerContent.style.transform = `translateY(-${scroll * 0.5}px)`;
-    headerContent.style.opacity = `${Math.max(1 - scroll / 300, 0)}`;
+    }
   });
+  
+  // Sauvegarder la préférence
+  localStorage.setItem('preferred-language', lang);
+  document.getElementById('lang-switcher').value = lang;
+}
 
+// Détection de la langue
+function detectLanguage() {
+  const saved = localStorage.getItem('preferred-language');
+  if (saved && translations[saved]) return saved;
+  
+  const browserLang = navigator.language.slice(0, 2);
+  return translations[browserLang] ? browserLang : 'fr';
+}
 
-  // Ancienne timeline (timeline-item) fade-in
-  const timelineItems = document.querySelectorAll('.timeline-item');
-  const timelineObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = 1;
-        entry.target.style.transform = 'translateY(0)';
-        timelineObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
+// Initialisation
+document.addEventListener('DOMContentLoaded', function() {
+  const lang = detectLanguage();
+  applyLanguage(lang);
+  
+  // Écouteur pour le changement de langue
+  document.getElementById('lang-switcher').addEventListener('change', function(e) {
+    applyLanguage(e.target.value);
+  });
+});
 
-  timelineItems.forEach(item => timelineObserver.observe(item));
+// Animations existantes
+const sections = document.querySelectorAll('section');
+const sectionObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      sectionObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
 
+sections.forEach(section => sectionObserver.observe(section));
 
-  // Nouvelle timeline animée (.animate-on-scroll)
-  const animatedBoxes = document.querySelectorAll('.animate-on-scroll');
-  const boxObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        boxObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
+const headerContent = document.getElementById('headerContent');
+window.addEventListener('scroll', () => {
+  let scroll = window.scrollY;
+  headerContent.style.transform = `translateY(-${scroll * 0.5}px)`;
+  headerContent.style.opacity = `${Math.max(1 - scroll / 300, 0)}`;
+});
 
-  animatedBoxes.forEach(box => boxObserver.observe(box));
+const animatedBoxes = document.querySelectorAll('.animate-on-scroll');
+const boxObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      boxObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
 
-
-
-
-
-
-
-
-
+animatedBoxes.forEach(box => boxObserver.observe(box));
 </script>
-
 
 </body>
 </html>
